@@ -64,8 +64,7 @@ function foto(){
      });  
      
      function onSuccess(imageData) { 
-        var image = document.getElementById('myImage'); 
-        document.getElementById("image".innerHTML='<img id="image" src ="" alt= "Aqui va la foto width="200" height="200"></img>')
+        var image = document.getElementById('image'); 
         image.src = "data:image/jpeg;base64," + imageData; 
      }  
      
