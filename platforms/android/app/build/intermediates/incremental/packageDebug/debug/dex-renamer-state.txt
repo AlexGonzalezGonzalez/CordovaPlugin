@@ -1,4 +1,4 @@
-#Tue Mar 26 11:52:42 CET 2019
+#Wed Mar 27 09:34:42 CET 2019
 base.0=/home/local/DANIELCASTELAO/agonzalezgonzalez/Escritorio/MyApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
