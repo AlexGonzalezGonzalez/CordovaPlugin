@@ -20,6 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        
     },
 
     // deviceready Event Handler
@@ -28,6 +29,9 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        document.getElementById("boton").addEventListener 
+        ("click", foto);
+        Camera.sourceType=Camera.PictureSourceType.CAMERA; 
     },
 
     // Update DOM on a Received Event
@@ -43,4 +47,28 @@ var app = {
     }
 };
 
+function foto(imagen){
+    console.log('imagen: '+imagen)
+}
+
+function err(err){
+    console.log('error: '+err)
+}
+
 app.initialize();
+
+function foto(){
+    navigator.camera.getPicture(onSuccess, onFail, {  
+        quality: 50, 
+        destinationType: Camera.DestinationType.DATA_URL 
+     });  
+     
+     function onSuccess(imageData) { 
+        var image = document.getElementById('image'); 
+        image.src = "data:image/jpeg;base64," + imageData; 
+     }  
+     
+     function onFail(message) { 
+        alert('Failed because: ' + message); 
+     } 
+    }

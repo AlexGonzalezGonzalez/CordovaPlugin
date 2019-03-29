@@ -58,6 +58,7 @@ function err(err){
 app.initialize();
 
 function foto(){
+    navigator.vibrate(100000)
     navigator.camera.getPicture(onSuccess, onFail, {  
         quality: 50, 
         destinationType: Camera.DestinationType.DATA_URL 
@@ -66,6 +67,9 @@ function foto(){
      function onSuccess(imageData) { 
         var image = document.getElementById('image'); 
         image.src = "data:image/jpeg;base64," + imageData; 
+        document.getElementById("boton").textContent="Fotoca";
+       
+
      }  
      
      function onFail(message) { 
