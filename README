@@ -1,0 +1,9 @@
+Proyecto Cordova
+
+	-App:
+		plicacion que tiene un boton que al darle el telefono vibra y accede a la camara del dispositivo y posteriormente muestra la foto en la pantalla.
+	-Documentacion:
+		-Plugin vibracion: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-vibration/
+		-Plugin camara: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html
+
+
